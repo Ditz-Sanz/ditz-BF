@@ -26,4 +26,4 @@ $ pip install futures
 
 $ cd ditz-BF
 
-& python ditz-BF.py
+& python ditz-BF
